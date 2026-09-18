@@ -1,4 +1,4 @@
- string.find (tostringlocal e=game:GetService( "Players" )
+local e=game:GetService( "Players" )
 local r=game:GetService( "Workspace" )
 local y=game:GetService( "RunService" )
 local u=game:GetService( "TweenService" )
@@ -122,8 +122,8 @@ local b= 620
 local A= 130
 local S=CFrame.new ( 4773.7587890625 , 70.392112731934 , -315.73501586914 )
 
-local Z= "Monte_FlightSpeed.txt"
-local z= "Monte_EggSelectConfig.json"
+local Z= "DiceHub_FlightSpeed.txt"
+local z= "DiceHub_EggSelectConfig.json"
 local d={[ "Light Dark" ]=Color3.fromRGB ( 168 , 85 , 247 ),[ "Titan Temple" ]=Color3.fromRGB ( 245 , 158 , 11 );
 [ "Cherry Blossom" ]=Color3.fromRGB ( 236 , 72 , 153 );
 [ "Cosmic" ]=Color3.fromRGB ( 6 , 182 , 212 ),[ "Prehistoric" ]=Color3.fromRGB ( 16 , 185 , 129 ),[ "Abyss Ocean" ]=Color3.fromRGB ( 59 , 130 , 246 );
@@ -3769,7 +3769,7 @@ local function fk(e,...) pcall(function(...)
     )
 end
 local function Mk(...) h.performanceMode = true pcall(function(...)
-        local e=r:FindFirstChild( "Monte_EggESP" )
+        local e=r:FindFirstChild( "DiceHub_EggESP" )
         if e then
             e:Destroy()
         end
@@ -4187,7 +4187,7 @@ local function rM(e,r,y,...) pcall(function(...)
     end
     )
 end
-local function yM(...) rM(Fk.togTween ,Color3.fromRGB ( 0 , 255 , 100 ),Color3.fromRGB ( 24 , 40 , 46 ))rM(Fk.togTeleport ,Color3.fromRGB ( 168 , 85 , 247 ),Color3.fromRGB ( 36 , 24 , 46 ))rM(Fk.btnPlaceEgg ,Color3.fromRGB ( 16 , 215 , 130 ),Color3.fromRGB ( 24 , 45 , 36 ))rM(Fk.togAutoPlaceEvery5 ,Color3.fromRGB ( 14 , 165 , 233 ),Color3.fromRGB ( 24 , 38 , 46 ))rM(Fk.togGodmode ,Color3.fromRGB ( 244 , 63 , 94 ),Color3.fromRGB ( 46 , 24 , 28 ))rM(Fk.btnUnstick ,Color3.fromRGB ( 249 , 115 , 22 ),Color3.fromRGB ( 46 , 32 , 24 ))rM(Fk.btnReset ,Color3.fromRGB ( 99 , 102 , 241 ),Color3.fromRGB ( 25 , 26 , 46 ))rM(Fk.btnLangSettings ,Color3.fromRGB ( 245 , 180 , 30 ),Color3.fromRGB ( 46 , 38 , 24 ))
+local function yM(...) rM(Fk.togTween ,Color3.fromRGB ( 0 , 195 , 255 ),Color3.fromRGB ( 24 , 40 , 46 ))rM(Fk.togTeleport ,Color3.fromRGB ( 168 , 85 , 247 ),Color3.fromRGB ( 36 , 24 , 46 ))rM(Fk.btnPlaceEgg ,Color3.fromRGB ( 16 , 215 , 130 ),Color3.fromRGB ( 24 , 45 , 36 ))rM(Fk.togAutoPlaceEvery5 ,Color3.fromRGB ( 14 , 165 , 233 ),Color3.fromRGB ( 24 , 38 , 46 ))rM(Fk.togGodmode ,Color3.fromRGB ( 244 , 63 , 94 ),Color3.fromRGB ( 46 , 24 , 28 ))rM(Fk.btnUnstick ,Color3.fromRGB ( 249 , 115 , 22 ),Color3.fromRGB ( 46 , 32 , 24 ))rM(Fk.btnReset ,Color3.fromRGB ( 99 , 102 , 241 ),Color3.fromRGB ( 25 , 26 , 46 ))rM(Fk.btnLangSettings ,Color3.fromRGB ( 245 , 180 , 30 ),Color3.fromRGB ( 46 , 38 , 24 ))
 end
 local function uM(e,...)
     local r=e or Xk or "EN"
@@ -4276,15 +4276,15 @@ local function jM(...)
     local r=Instance.new ( "Frame" )r.Name = "Card" r.Size =UDim2.fromOffset ( 336 , 140 )r.Position =UDim2.new ( 0.5 , -168 , 0.5 , -70 )r.BackgroundColor3 =Color3.fromRGB ( 16 , 16 , 22 )r.BorderSizePixel = 0 r.Parent =e;
     (Instance.new ( "UICorner" ,r)).CornerRadius =UDim.new ( 0 , 14 )
     local y=Instance.new ( "UIStroke" ,r)y.Color =Color3.fromRGB ( 0 , 185 , 255 )y.Thickness = 1.4 y.ApplyStrokeMode =Enum.ApplyStrokeMode.Border
-    local w=Instance.new ( "TextLabel" )w.Size =UDim2.new ( 1 , -28 , 0 , 24 )w.Position =UDim2.new ( 0 , 14 , 0 , 14 )w.BackgroundTransparency = 1 w.Text = "Monte" w.TextColor3 =Color3.fromRGB ( 245 , 248 , 255 )w.TextSize = 18 w.Font =Enum.Font.GothamBold w.TextXAlignment =Enum.TextXAlignment.Left w.AutoLocalize = false w.Parent =r
+    local w=Instance.new ( "TextLabel" )w.Size =UDim2.new ( 1 , -28 , 0 , 24 )w.Position =UDim2.new ( 0 , 14 , 0 , 14 )w.BackgroundTransparency = 1 w.Text = "Dice Hub" w.TextColor3 =Color3.fromRGB ( 245 , 248 , 255 )w.TextSize = 18 w.Font =Enum.Font.GothamBold w.TextXAlignment =Enum.TextXAlignment.Left w.AutoLocalize = false w.Parent =r
     local j=Instance.new ( "TextLabel" )j.Size =UDim2.new ( 1 , -28 , 0 , 16 )j.Position =UDim2.new ( 0 , 14 , 0 , 38 )j.BackgroundTransparency = 1 j.Text = "Steal an Egg Suite v42.64" j.TextColor3 =Color3.fromRGB ( 140 , 150 , 175 )j.TextSize = 12 j.Font =Enum.Font.Gotham j.TextXAlignment =Enum.TextXAlignment.Left j.AutoLocalize = false j.Parent =r
-    local k=Instance.new ( "TextLabel" )k.Size =UDim2.new ( 0 , 50 , 0 , 24 )k.Position =UDim2.new ( 1 , -64 , 0 , 14 )k.BackgroundTransparency = 1 k.Text = "0%" k.TextColor3 =Color3.fromRGB ( 0 , 255 , 100 )k.TextSize = 14 k.Font =Enum.Font.GothamBold k.TextXAlignment =Enum.TextXAlignment.Right k.AutoLocalize = false k.Parent =r
+    local k=Instance.new ( "TextLabel" )k.Size =UDim2.new ( 0 , 50 , 0 , 24 )k.Position =UDim2.new ( 1 , -64 , 0 , 14 )k.BackgroundTransparency = 1 k.Text = "0%" k.TextColor3 =Color3.fromRGB ( 0 , 255 , 160 )k.TextSize = 14 k.Font =Enum.Font.GothamBold k.TextXAlignment =Enum.TextXAlignment.Right k.AutoLocalize = false k.Parent =r
     local a=Instance.new ( "Frame" )a.Size =UDim2.new ( 1 , -28 , 0 , 10 )a.Position =UDim2.new ( 0 , 14 , 0 , 74 )a.BackgroundColor3 =Color3.fromRGB ( 25 , 27 , 38 )a.BorderSizePixel = 0 a.Parent =r;
     (Instance.new ( "UICorner" ,a)).CornerRadius =UDim.new ( 0 , 5 )
     local V=Instance.new ( "Frame" )V.Size =UDim2.new ( 0 , 0 , 1 , 0 )V.BackgroundColor3 =Color3.fromRGB ( 0 , 185 , 255 )V.BorderSizePixel = 0 V.Parent =a;
     (Instance.new ( "UICorner" ,V)).CornerRadius =UDim.new ( 0 , 5 )
-    local H=Instance.new ( "UIGradient" ,V)H.Color =ColorSequence.new ({ColorSequenceKeypoint.new ( 0 ,Color3.fromRGB ( 0 , 185 , 255 )),ColorSequenceKeypoint.new ( 1 ,Color3.fromRGB ( 0 , 255 , 100 ))})
-    local t=Instance.new ( "TextLabel" )t.Size =UDim2.new ( 1 , -28 , 0 , 16 )t.Position =UDim2.new ( 0 , 14 , 0 , 94 )t.BackgroundTransparency = 1 t.Text = "Initializing Monte..." t.TextColor3 =Color3.fromRGB ( 130 , 140 , 165 )t.TextSize = 11 t.Font =Enum.Font.Gotham t.TextXAlignment =Enum.TextXAlignment.Left t.AutoLocalize = false t.Parent =r task.spawn (function(...)
+    local H=Instance.new ( "UIGradient" ,V)H.Color =ColorSequence.new ({ColorSequenceKeypoint.new ( 0 ,Color3.fromRGB ( 0 , 185 , 255 )),ColorSequenceKeypoint.new ( 1 ,Color3.fromRGB ( 0 , 255 , 160 ))})
+    local t=Instance.new ( "TextLabel" )t.Size =UDim2.new ( 1 , -28 , 0 , 16 )t.Position =UDim2.new ( 0 , 14 , 0 , 94 )t.BackgroundTransparency = 1 t.Text = "Initializing Dice Hub..." t.TextColor3 =Color3.fromRGB ( 130 , 140 , 165 )t.TextSize = 11 t.Font =Enum.Font.Gotham t.TextXAlignment =Enum.TextXAlignment.Left t.AutoLocalize = false t.Parent =r task.spawn (function(...)
         for y= 1 , 100 , 1 do
             if not e.Parent then
                 break
@@ -4355,7 +4355,7 @@ end
 local function aM(...) h.alive = false pcall(Ik)pcall(Ak)pcall(function(...) y:Set3dRenderingEnabled( true )
     end
     )pcall(function(...)
-        local y=r:FindFirstChild( "Monte_EggESP" )
+        local y=r:FindFirstChild( "DiceHub_EggESP" )
         if y then
             y:Destroy()
         end
@@ -4397,7 +4397,7 @@ local function oM(...)
         end
         if not y then
             pcall(function(...)
-                (game:GetService( "StarterGui" )):SetCore( "SendNotification" ,{[ "Title" ]=tostring(e.Title or "Monte" ),[ "Text" ]=tostring(e.Content or "" );
+                (game:GetService( "StarterGui" )):SetCore( "SendNotification" ,{[ "Title" ]=tostring(e.Title or "Dice Hub" ),[ "Text" ]=tostring(e.Content or "" );
                 [ "Duration" ]= 3 })
             end
             )
@@ -4413,7 +4413,7 @@ local function oM(...)
                     )
                     if not u then
                         pcall(function(...)
-                            (game:GetService( "StarterGui" )):SetCore( "SendNotification" ,{[ "Title" ]=tostring(y and y.Title or "Monte" );
+                            (game:GetService( "StarterGui" )):SetCore( "SendNotification" ,{[ "Title" ]=tostring(y and y.Title or "Dice Hub" );
                             [ "Text" ]=tostring(y and y.Content or "" ),[ "Duration" ]= 3 })
                         end
                         )
@@ -4428,7 +4428,7 @@ local function oM(...)
         local H=V and math.clamp (a.X * 0.7 , 440 , 500 )or 500
         local t=V and math.clamp (a.Y * 0.72 , 280 , 340 )or 340
         local s=UDim2.fromOffset (H,t)
-        local p=r:CreateWindow({[ "Title" ]= "Monte" ;
+        local p=r:CreateWindow({[ "Title" ]= "Dice Hub" ;
         [ "Author" ]= "Steal An Egg V1" ;
         [ "Folder" ]= "Dice_StealAnEgg" ;
         [ "Icon" ]=dk;
@@ -4443,7 +4443,7 @@ local function oM(...)
         end
         )
         local B=p:Tag({[ "Title" ]= "Status: Ready" ;
-        [ "Color" ]=Color3.fromRGB ( 0 , 255 , 100 ),[ "Border" ]= true })
+        [ "Color" ]=Color3.fromRGB ( 0 , 255 , 160 ),[ "Border" ]= true })
         local J= 44
         local K= false
         local c= false
@@ -4893,7 +4893,7 @@ local function oM(...)
                     local y=(Xk== "TH" )
                     local u=Wk(Xk)
                     if B then
-                        local e=Color3.fromRGB ( 0 , 255 , 100 )
+                        local e=Color3.fromRGB ( 0 , 255 , 160 )
                         if h.securingEgg or h.teleporting then
                             e=Color3.fromRGB ( 249 , 115 , 22 )
                         elseif h.isReturning or h.glidingToTarget then
@@ -4948,10 +4948,10 @@ local function oM(...)
         k.Parent =a
     end
     h.gui =k
-    local V=Color3.fromRGB ( 8 , 10 , 8 )
-    local H=Color3.fromRGB ( 12 , 16 , 12 )
-    local t=Color3.fromRGB ( 16 , 22 , 16 )
-    local s=Color3.fromRGB ( 22 , 30 , 22 )
+    local V=Color3.fromRGB ( 15 , 17 , 24 )
+    local H=Color3.fromRGB ( 20 , 24 , 34 )
+    local t=Color3.fromRGB ( 22 , 26 , 38 )
+    local s=Color3.fromRGB ( 28 , 33 , 48 )
     local p=Color3.fromRGB ( 45 , 52 , 75 )
     local B=Color3.fromRGB ( 240 , 243 , 255 )
     local J=Color3.fromRGB ( 140 , 148 , 170 )
@@ -4966,8 +4966,8 @@ local function oM(...)
     local N=Instance.new ( "UIStroke" )N.Color =p N.Thickness = 1.4 N.Parent =Q
     local U=Instance.new ( "Frame" )U.Name = "Header" U.Size =UDim2.new ( 1 , 0 , 0 , 46 )U.BackgroundColor3 =H U.BorderSizePixel = 0 U.Parent =Q;
     (Instance.new ( "UICorner" ,U)).CornerRadius =UDim.new ( 0 , 12 )
-    local l=Instance.new ( "TextLabel" )l.Size =UDim2.new ( 1 , -90 , 0 , 22 )l.Position =UDim2.new ( 0 , 12 , 0 , 6 )l.BackgroundTransparency = 1 l.Text = "Monte Hub" l.TextColor3 =B l.TextSize = 14 l.Font =Enum.Font.GothamBold l.TextXAlignment =Enum.TextXAlignment.Left l.AutoLocalize = false l.Parent =U
-    local D=Instance.new ( "TextLabel" )D.Size =UDim2.new ( 1 , -90 , 0 , 14 )D.Position =UDim2.new ( 0 , 12 , 0 , 26 )D.BackgroundTransparency = 1 D.Text = "Steal an Egg v42.64" D.TextColor3 =Color3.fromRGB ( 0 , 255 , 100 )D.TextSize = 11 D.Font =Enum.Font.Gotham D.TextXAlignment =Enum.TextXAlignment.Left D.AutoLocalize = false D.Parent =U
+    local l=Instance.new ( "TextLabel" )l.Size =UDim2.new ( 1 , -90 , 0 , 22 )l.Position =UDim2.new ( 0 , 12 , 0 , 6 )l.BackgroundTransparency = 1 l.Text = "Dice Hub (Fallback)" l.TextColor3 =B l.TextSize = 14 l.Font =Enum.Font.GothamBold l.TextXAlignment =Enum.TextXAlignment.Left l.AutoLocalize = false l.Parent =U
+    local D=Instance.new ( "TextLabel" )D.Size =UDim2.new ( 1 , -90 , 0 , 14 )D.Position =UDim2.new ( 0 , 12 , 0 , 26 )D.BackgroundTransparency = 1 D.Text = "Steal an Egg v42.64" D.TextColor3 =Color3.fromRGB ( 0 , 255 , 160 )D.TextSize = 11 D.Font =Enum.Font.Gotham D.TextXAlignment =Enum.TextXAlignment.Left D.AutoLocalize = false D.Parent =U
     local C=Instance.new ( "TextButton" )C.Size =UDim2.new ( 0 , 28 , 0 , 28 )C.Position =UDim2.new ( 1 , -68 , 0 , 9 )C.BackgroundColor3 =t C.Text = "-" C.TextColor3 =B C.TextSize = 16 C.Font =Enum.Font.GothamBold C.AutoButtonColor = false C.Parent =U;
     (Instance.new ( "UICorner" ,C)).CornerRadius =UDim.new ( 0 , 6 )
     local q=Instance.new ( "TextButton" )q.Size =UDim2.new ( 0 , 28 , 0 , 28 )q.Position =UDim2.new ( 1 , -36 , 0 , 9 )q.BackgroundColor3 =Color3.fromRGB ( 239 , 68 , 68 )q.Text = "X" q.TextColor3 =B q.TextSize = 12 q.Font =Enum.Font.GothamBold q.AutoButtonColor = false q.Parent =U;
@@ -5018,7 +5018,7 @@ local function oM(...)
     E( "AUTO STEAL MODES" , 10 )
     local S= false
     local Z=nil
-    local z=nil Z=b( "Auto Steal (Tween)" , "Fly to steal eggs & auto stash into backpack" ,h.pureTweenFarm ,Color3.fromRGB ( 0 , 255 , 100 ), 11 ,function(e,...)
+    local z=nil Z=b( "Auto Steal (Tween)" , "Fly to steal eggs & auto stash into backpack" ,h.pureTweenFarm ,Color3.fromRGB ( 0 , 195 , 255 ), 11 ,function(e,...)
         if S then
             return
         end
@@ -5104,7 +5104,7 @@ local function oM(...)
     local F=Instance.new ( "Frame" )F.Size =UDim2.new ( 1 , 0 , 0 , 48 )F.BackgroundColor3 =t F.LayoutOrder = 41 F.Parent =n;
     (Instance.new ( "UICorner" ,F)).CornerRadius =UDim.new ( 0 , 8 )
     local O=Instance.new ( "TextLabel" )O.Size =UDim2.new ( 1 , -130 , 0 , 18 )O.Position =UDim2.new ( 0 , 10 , 0 , 6 )O.BackgroundTransparency = 1 O.Text = "Flight Speed" O.TextColor3 =B O.TextSize = 13 O.Font =Enum.Font.GothamBold O.TextXAlignment =Enum.TextXAlignment.Left O.AutoLocalize = false O.Parent =F
-    local T=Instance.new ( "TextLabel" )T.Size =UDim2.new ( 0 , 70 , 0 , 24 )T.Position =UDim2.new ( 1 , -80 , 0.5 , -12 )T.BackgroundColor3 =V T.Text =string.format ( "%d Studs/s" ,h.glideSpeed or 600 )T.TextColor3 =Color3.fromRGB ( 0 , 255 , 100 )T.TextSize = 11 T.Font =Enum.Font.GothamBold T.AutoLocalize = false T.Parent =F;
+    local T=Instance.new ( "TextLabel" )T.Size =UDim2.new ( 0 , 70 , 0 , 24 )T.Position =UDim2.new ( 1 , -80 , 0.5 , -12 )T.BackgroundColor3 =V T.Text =string.format ( "%d Studs/s" ,h.glideSpeed or 600 )T.TextColor3 =Color3.fromRGB ( 0 , 255 , 160 )T.TextSize = 11 T.Font =Enum.Font.GothamBold T.AutoLocalize = false T.Parent =F;
     (Instance.new ( "UICorner" ,T)).CornerRadius =UDim.new ( 0 , 6 )
     local W=Instance.new ( "TextButton" )W.Size =UDim2.new ( 0 , 24 , 0 , 24 )W.Position =UDim2.new ( 1 , -110 , 0.5 , -12 )W.BackgroundColor3 =s W.Text = "-" W.TextColor3 =B W.TextSize = 14 W.Font =Enum.Font.GothamBold W.Parent =F;
     (Instance.new ( "UICorner" ,W)).CornerRadius =UDim.new ( 0 , 6 )
@@ -5202,7 +5202,7 @@ local function oM(...)
     end
     )
 end
-H( "[+] Initializing Monte Hub v1.0 (Steal an Egg Edition)..." )oM()task.spawn (function(...) task.wait ( 0.5 )A4()b4( true )C4()
+H( "[+] Initializing Dice Hub x WindUI v42.64 (Steal an Egg Edition)..." )oM()task.spawn (function(...) task.wait ( 0.5 )A4()b4( true )C4()
     if o.Character then
         z4(o.Character )
     end
@@ -5225,4 +5225,136 @@ end
 if h.antiAFK then
     task.spawn (bk)
 end
-H( "[+] Monte Hub Ready!" )
+H( "[+] Dice Hub v42.64 Ready! All-In-One Built-in Anti-AFK & Prometheus Ready!" )
+
+-- ========================================
+-- MONTE HUB (Dice original + Rebrand)
+-- ========================================
+
+-- 1. COLE O SCRIPT ORIGINAL DO DICE HUB AQUI EM CIMA
+--    (o arquivo completo que você comprou)
+
+-- 2. Depois do script original, cole isto:
+
+task.wait(2) -- espera o hub carregar
+
+--[[
+    Monte Rebrand - Overlay
+]]
+local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+
+local LP = Players.LocalPlayer
+
+local Colors = {
+    Bg = Color3.fromRGB(8, 10, 8),
+    Header = Color3.fromRGB(12, 16, 12),
+    Card = Color3.fromRGB(16, 22, 16),
+    Accent = Color3.fromRGB(0, 255, 100),
+}
+
+local function getRoot()
+    local ok, hui = pcall(function()
+        return gethui and gethui() or CoreGui
+    end)
+    if ok and hui then return hui end
+    return LP:FindFirstChild("PlayerGui") or CoreGui
+end
+
+local function applyTheme(gui)
+    if not gui then return 0 end
+    local count = 0
+
+    for _, obj in ipairs(gui:GetDescendants()) do
+        if (obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox")) and obj.Text then
+            local text = obj.Text
+            if string.find(text, "Dice Hub") or string.find(text, "DiceHub") or string.find(text, "Dice") then
+                obj.Text = text
+                    :gsub("Dice Hub %(Fallback%)", "Monte Hub")
+                    :gsub("Dice Hub", "Monte Hub")
+                    :gsub("DiceHub", "Monte")
+                    :gsub("Dice", "Monte")
+                count += 1
+            end
+        end
+
+        if obj:IsA("Frame") or obj:IsA("ScrollingFrame") then
+            local bg = obj.BackgroundColor3
+            if bg.R < 0.15 and bg.G < 0.15 and bg.B < 0.2 then
+                obj.BackgroundColor3 = Colors.Bg
+                count += 1
+            elseif bg.R < 0.2 and bg.G < 0.2 and bg.B < 0.25 then
+                obj.BackgroundColor3 = Colors.Header
+                count += 1
+            end
+        end
+
+        if (obj:IsA("TextLabel") or obj:IsA("TextButton")) then
+            local c = obj.TextColor3
+            if (c.G > 0.6 and c.R < 0.4) or (c.B > 0.7 and c.G > 0.5) then
+                obj.TextColor3 = Colors.Accent
+                count += 1
+            end
+        end
+
+        if obj:IsA("UIStroke") then
+            obj.Color = Colors.Accent
+            count += 1
+        end
+    end
+    return count
+end
+
+local function findAndRebrand()
+    local root = getRoot()
+    local targets = {}
+
+    for _, gui in ipairs(root:GetChildren()) do
+        if gui:IsA("ScreenGui") then
+            local name = gui.Name
+            if string.find(name, "Desync") or string.find(name, "Dice") or string.find(name, "Sniper") or string.find(name, "Wind") then
+                table.insert(targets, gui)
+            else
+                for _, desc in ipairs(gui:GetDescendants()) do
+                    if (desc:IsA("TextLabel") or desc:IsA("TextButton")) and desc.Text and string.find(desc.Text, "Dice") then
+                        table.insert(targets, gui)
+                        break
+                    end
+                end
+            end
+        end
+    end
+
+    local pg = LP:FindFirstChild("PlayerGui")
+    if pg then
+        for _, gui in ipairs(pg:GetChildren()) do
+            if gui:IsA("ScreenGui") then
+                for _, desc in ipairs(gui:GetDescendants()) do
+                    if (desc:IsA("TextLabel") or desc:IsA("TextButton")) and desc.Text and string.find(desc.Text, "Dice") then
+                        table.insert(targets, gui)
+                        break
+                    end
+                end
+            end
+        end
+    end
+
+    local total = 0
+    for _, gui in ipairs(targets) do
+        total += applyTheme(gui)
+    end
+    return total
+end
+
+task.spawn(function()
+    for i = 1, 20 do
+        local changes = findAndRebrand()
+        if changes > 0 then
+            print("[Monte] Rebrand aplicado!")
+            break
+        end
+        task.wait(0.5)
+    end
+end)
+
+print("[Monte Hub] Carregado")
